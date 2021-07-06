@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PixaImage</string>
+    <string-array name="home_scrool_images">
+        <item>https://pixabay.com/get/ge1dda1634a15e208882459803a1f9f3e263656e1d0787c1fba8a4c63414e69e673a447857cb8f25a2b0fa102a16dcffb270c2f0c04f45f7afb0b79ddca602bdf_1280.jpg</item>
+        <item>https://pixabay.com/get/g2794de51b97a693c16baa9bf7ce32f117ad6c2e62a5f4300c51c0c0cf65e3084930771034962534ddcc9aedb5449be17d083caa3d2da275b9e8253fdca8d2492_1280.jpg</item>
+        <item>https://pixabay.com/get/gb15b7b230df14609c71c57827404cb2880b6c48e6aca5ca81d9c6d92bc27862ab11e16c41eb8745a6c0c95998ebf692b3d19b3ef0753fd3aa07aea865407ce27_1280.jpg</item>
+        <item>https://pixabay.com/get/ga020d101d2ac051d88b0e975a0abf84daef73bc1887e633429f86368d96e4eb3e61b9a8ffc34446c69df93ec2d9f683f7588f5a2bffb05e6ea6fb114e677b694_1280.jpg</item>
+        <item>https://pixabay.com/get/gf39dc9aae3c685e21ab01a947ba81ee075647a66e27496679431bc1edb189c67abd8f9b7b301577214521149240b4ab7_1280.jpg</item>
+    </string-array>
+</resources>
