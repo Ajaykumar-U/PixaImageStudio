@@ -7,6 +7,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         app:cardCornerRadius="5dp"
@@ -25,6 +26,12 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
+        <ProgressBar
+            android:id="@+id/progressBarLayoutItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
     </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

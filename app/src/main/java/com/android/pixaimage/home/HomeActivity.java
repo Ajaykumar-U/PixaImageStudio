@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 public class HomeActivity extends AppCompatActivity implements HomeContractor.View {
 
-    RecyclerView recyclerViewScrollHome, recyclerViewBirds, recyclerViewAnimals,
+    RecyclerView recyclerViewBirds, recyclerViewAnimals,
             recyclerViewFish, recyclerViewTrees, recyclerViewSnakes;
 
     Button btnAnimals, btnSnakes, btnFish, btnBirds, btnTrees;
@@ -28,7 +28,6 @@ public class HomeActivity extends AppCompatActivity implements HomeContractor.Vi
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        String[] imageScrollList = getResources().getStringArray(R.array.home_scrool_images);
 
         presenter.attachView(this);
         presenter.getAnimalsDetails("animals");
@@ -73,11 +72,6 @@ public class HomeActivity extends AppCompatActivity implements HomeContractor.Vi
             intent.putExtra("AppBarName", "Snakes");
             startActivity(intent);
         });
-
-
-        recyclerViewScrollHome = findViewById(R.id.recyclerViewScrollHome);
-        recyclerViewScrollHome.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
-        recyclerViewScrollHome.setAdapter(new HomeRecyclerAdapter(imageScrollList));
 
         recyclerViewAnimals = findViewById(R.id.recyclerViewHomeAnimal);
         recyclerViewAnimals.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
