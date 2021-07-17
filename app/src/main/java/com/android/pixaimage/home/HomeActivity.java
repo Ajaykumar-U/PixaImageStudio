@@ -3,6 +3,7 @@ package com.android.pixaimage.home;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -10,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.pixaimage.R;
 import com.android.pixaimage.more.MoreActivity;
+import com.android.pixaimage.search.SearchActivity;
 
 import java.util.ArrayList;
 
@@ -19,6 +21,8 @@ public class HomeActivity extends AppCompatActivity implements HomeContractor.Vi
             recyclerViewFish, recyclerViewTrees, recyclerViewSnakes;
 
     Button btnAnimals, btnSnakes, btnFish, btnBirds, btnTrees;
+
+    ImageView ivSearchHome;
 
     HomeContractor.Presenter presenter = (HomeContractor.Presenter) new HomePresenter();
     ArrayList<String> birdsList, animalsList, fishList, treesList, snakesList;
@@ -41,6 +45,12 @@ public class HomeActivity extends AppCompatActivity implements HomeContractor.Vi
         btnBirds = findViewById(R.id.btnBirdHome);
         btnFish = findViewById(R.id.btnFishHome);
         btnTrees = findViewById(R.id.btnTreeHome);
+
+        ivSearchHome = findViewById(R.id.iv_search_home);
+
+        ivSearchHome.setOnClickListener((v)->{
+            startActivity(new Intent(HomeActivity.this, SearchActivity.class));
+        });
 
         btnTrees.setOnClickListener((v) -> {
             Intent intent = new Intent(HomeActivity.this, MoreActivity.class);

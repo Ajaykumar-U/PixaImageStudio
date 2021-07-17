@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitBuilder {
 
-    public static final String BASE_URL = "https://pixabay.com/api/";
+    public static final String BASE_URL = "https://pixabay.com/";
 
     public static ApiService getApiService() {
         return new Retrofit.Builder()

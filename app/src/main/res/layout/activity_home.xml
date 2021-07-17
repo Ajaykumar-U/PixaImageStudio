@@ -23,6 +23,27 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/iv_search_icon"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_marginRight="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_action_bar_home"
+        app:layout_constraintBottom_toBottomOf="@id/tv_action_bar_home"/>
+
+    <ImageView
+        android:id="@+id/iv_search_home"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_search"
+        android:layout_marginRight="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_action_bar_home"
+        app:layout_constraintBottom_toBottomOf="@id/tv_action_bar_home"/>
+
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nestedScrollHome"
         android:layout_width="match_parent"
@@ -46,7 +67,6 @@
                 android:gravity="left"
                 android:textColor="#fff"
                 android:layout_marginTop="2dp"
-                android:layout_marginBottom="4dp"
                 android:layout_marginLeft="10dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="@id/btnBirdHome"
@@ -81,7 +101,6 @@
                 android:gravity="left"
                 android:textColor="#fff"
                 android:layout_marginTop="2dp"
-                android:layout_marginBottom="4dp"
                 android:layout_marginLeft="10dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="@id/btnAnimalHome"
@@ -116,7 +135,6 @@
                 android:gravity="left"
                 android:textColor="#fff"
                 android:layout_marginTop="2dp"
-                android:layout_marginBottom="4dp"
                 android:layout_marginLeft="10dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="@id/btnFishHome"
@@ -151,7 +169,6 @@
                 android:gravity="left"
                 android:textColor="#fff"
                 android:layout_marginTop="2dp"
-                android:layout_marginBottom="4dp"
                 android:layout_marginLeft="10dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="@id/btnTreeHome"
@@ -186,7 +203,6 @@
                 android:gravity="left"
                 android:textColor="#fff"
                 android:layout_marginTop="2dp"
-                android:layout_marginBottom="4dp"
                 android:layout_marginLeft="10dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="@id/btnSnakesHome"
